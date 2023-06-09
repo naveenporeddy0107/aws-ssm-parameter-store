@@ -12,7 +12,16 @@ parameters= [
   {name= "dev.user.mongo",value="MONGO=true"},
   {name= "dev.cart.redis_host",value="redis-dev.naveendevops.tech"},
   {name= "dev.cart.catalogue_host",value="catalogue-dev.naveendevops.tech"},
-  {name= "dev.cart.catalogue_port",value="8080"}
+  {name= "dev.cart.catalogue_port",value="8080"},
+  {name= "dev.shipping.CART_ENDPOINT",value="cart-dev.naveendevops.tech:8080"},
+  {name= "dev.shipping.DB_HOST",value="mysql-dev.naveendevops.tech"},
+  {name= "dev.payment.CART_ENDPOINT",value="cart-dev.naveendevops.tech:8080"},
+  {name= "dev.payment.CART_PORT",value="8080"},
+  {name= "dev.payment.USER_HOST",value="user-dev.naveendevops.tech"},
+  {name= "dev.payment.USER_PORT",value="8080"},
+  {name= "dev.payment.AMQP_HOST",value="rabbitmq-dev.naveendevops.tech:8080"},
+  {name= "dev.payment.AMQP_USER",value="roboshop"},
+  {name= "dev.payment.AMQP_PASS",value="rabbitmq_appuser_password"}
 ]
 
 #Environment=MONGO=true
@@ -23,5 +32,6 @@ parameters= [
 #Environment=REDIS_HOST=redis-dev.rdevopsb72.online
 #Environment=CATALOGUE_HOST=catalogue-dev.rdevopsb72.online
 #Environment=CATALOGUE_PORT=8080
+
 
 
