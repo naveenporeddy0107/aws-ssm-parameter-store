@@ -16,25 +16,19 @@ parameters= [
   {name= "dev.shipping.CART_ENDPOINT",value="cart-dev.naveendevops.tech:8080"},
   {name= "dev.shipping.db_host",value="mysql-dev.naveendevops.tech"},
   {name= "dev.shipping.db_user",value="root"},
-  {name= "dev.shipping.db_password",value="RoboShop@1"},
+
   {name= "dev.payment.CART_ENDPOINT",value="cart-dev.naveendevops.tech"},
   {name= "dev.payment.CART_PORT",value="8080"},
   {name= "dev.payment.USER_HOST",value="user-dev.naveendevops.tech"},
   {name= "dev.payment.USER_PORT",value="8080"},
-  {name= "dev.payment.AMQP_PASS",value="roboshop123"},
+
   {name= "dev.payment.amqp_host",value="rabbitmq-dev.naveendevops.tech"},
   {name= "dev.payment.amqp_user",value="roboshop"}
 
 ]
 
-#Environment=MONGO=true
-#Environment=REDIS_HOST=redis-dev.rdevopsb72.online
-#Environment=MONGO_URL="mongodb://mongodb-dev.naveendevops.tech:27017/users"
-
-
-#Environment=REDIS_HOST=redis-dev.rdevopsb72.online
-#Environment=CATALOGUE_HOST=catalogue-dev.rdevopsb72.online
-#Environment=CATALOGUE_PORT=8080
-
-
+passwords = [
+  {name= "dev.shipping.db_password",value="RoboShop@1"},
+  {name= "dev.payment.AMQP_PASS",value="roboshop123"}
+]
 
