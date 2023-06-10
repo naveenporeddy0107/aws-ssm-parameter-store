@@ -1,34 +1,34 @@
 parameters= [
-  {name= "dev.frontend.catalogue_url",value="http://catalogue-dev.naveendevops.tech:8080/"},
-  {name= "dev.frontend.cart_url",value="http://cart-dev.naveendevops.tech:8080/"},
-  {name= "dev.frontend.user_url",value="http://user-dev.naveendevops.tech:8080/"},
-  {name= "dev.frontend.payment_url",value="http://payment-dev.naveendevops.tech:8080/"},
-  {name= "dev.frontend.shipping_url",value="http://shipping-dev.naveendevops.tech:8080/"},
-  {name= "dev.catalogue.mongo_endpoint",value="mongodb-dev.naveendevops.tech"},
-  {name= "dev.catalogue.mongo",value="MONGO=true"},
-  {name= "dev.catalogue.mongo_url",value="mongodb://mongodb-dev.naveendevops.tech:27017/catalogue"},
-  {name= "dev.user.redis_host",value="redis-dev.naveendevops.tech"},
-  {name= "dev.user.mongo_url",value="mongodb://mongodb-dev.naveendevops.tech:27017/users"},
-  {name= "dev.user.mongo",value="MONGO=true"},
-  {name= "dev.cart.redis_host",value="redis-dev.naveendevops.tech"},
-  {name= "dev.cart.catalogue_host",value="catalogue-dev.naveendevops.tech"},
-  {name= "dev.cart.catalogue_port",value="8080"},
-  {name= "dev.shipping.CART_ENDPOINT",value="cart-dev.naveendevops.tech:8080"},
-  {name= "dev.shipping.db_host",value="mysql-dev.naveendevops.tech"},
-  {name= "dev.shipping.db_user",value="root"},
+  {name= "${var.env}.frontend.catalogue_url",value="http://catalogue-${var.env}.naveen${var.env}ops.tech:8080/"},
+  {name= "${var.env}.frontend.cart_url",value="http://cart-${var.env}.naveen${var.env}ops.tech:8080/"},
+  {name= "${var.env}.frontend.user_url",value="http://user-${var.env}.naveen${var.env}ops.tech:8080/"},
+  {name= "${var.env}.frontend.payment_url",value="http://payment-${var.env}.naveen${var.env}ops.tech:8080/"},
+  {name= "${var.env}.frontend.shipping_url",value="http://shipping-${var.env}.naveen${var.env}ops.tech:8080/"},
+  {name= "${var.env}.catalogue.mongo_endpoint",value="mongodb-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.catalogue.mongo",value="MONGO=true"},
+  {name= "${var.env}.catalogue.mongo_url",value="mongodb://mongodb-${var.env}.naveen${var.env}ops.tech:27017/catalogue"},
+  {name= "${var.env}.user.redis_host",value="redis-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.user.mongo_url",value="mongodb://mongodb-${var.env}.naveen${var.env}ops.tech:27017/users"},
+  {name= "${var.env}.user.mongo",value="MONGO=true"},
+  {name= "${var.env}.cart.redis_host",value="redis-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.cart.catalogue_host",value="catalogue-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.cart.catalogue_port",value="8080"},
+  {name= "${var.env}.shipping.CART_ENDPOINT",value="cart-${var.env}.naveen${var.env}ops.tech:8080"},
+  {name= "${var.env}.shipping.db_host",value="mysql-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.shipping.db_user",value="root"},
 
-  {name= "dev.payment.CART_ENDPOINT",value="cart-dev.naveendevops.tech"},
-  {name= "dev.payment.CART_PORT",value="8080"},
-  {name= "dev.payment.USER_HOST",value="user-dev.naveendevops.tech"},
-  {name= "dev.payment.USER_PORT",value="8080"},
+  {name= "${var.env}.payment.CART_ENDPOINT",value="cart-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.payment.CART_PORT",value="8080"},
+  {name= "${var.env}.payment.USER_HOST",value="user-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.payment.USER_PORT",value="8080"},
 
-  {name= "dev.payment.amqp_host",value="rabbitmq-dev.naveendevops.tech"},
-  {name= "dev.payment.amqp_user",value="roboshop"}
+  {name= "${var.env}.payment.amqp_host",value="rabbitmq-${var.env}.naveen${var.env}ops.tech"},
+  {name= "${var.env}.payment.amqp_user",value="roboshop"}
 
 ]
 
 passwords = [
-  {name= "dev.shipping.db_password",value="RoboShop@1"},
-  {name= "dev.payment.AMQP_PASS",value="roboshop123"}
+  {name= "${var.env}.shipping.db_password",value="RoboShop@1"},
+  {name= "${var.env}.payment.AMQP_PASS",value="roboshop123"}
 ]
 
