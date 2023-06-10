@@ -22,8 +22,8 @@ parameters= [
   {name= "dev.payment.USER_HOST",value="user-dev.naveendevops.tech"},
   {name= "dev.payment.USER_PORT",value="8080"},
   {name= "dev.payment.AMQP_PASS",value="roboshop123"},
-  {name= "dev.payment.AMQP_HOST",value="rabbitmq-dev.naveendevops.tech:8080"},
-  {name= "dev.payment.AMQP_USER",value="roboshop"}
+  {name= "dev.payment.amqp_host",value="rabbitmq-dev.naveendevops.tech"},
+  {name= "dev.payment.amqp_user",value="roboshop"}
 
 ]
 
