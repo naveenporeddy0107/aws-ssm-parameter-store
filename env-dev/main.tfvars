@@ -17,7 +17,7 @@ parameters= [
   {name= "dev.shipping.db_host",value="mysql-dev.naveendevops.tech"},
   {name= "dev.shipping.db_user",value="root"},
   {name= "dev.shipping.db_password",value="RoboShop@1"},
-  {name= "dev.payment.CART_ENDPOINT",value="cart-dev.naveendevops.tech:8080"},
+  {name= "dev.payment.CART_ENDPOINT",value="cart-dev.naveendevops.tech"},
   {name= "dev.payment.CART_PORT",value="8080"},
   {name= "dev.payment.USER_HOST",value="user-dev.naveendevops.tech"},
   {name= "dev.payment.USER_PORT",value="8080"},
